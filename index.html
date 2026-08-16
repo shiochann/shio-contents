@@ -149,6 +149,77 @@ ul{margin:0;padding:0;list-style:none}
 .ttl .jp{display:block;font-size:clamp(21px,4.6vw,28px);font-weight:700;color:var(--navy)}
 .ttl__lead{margin:-28px auto 44px;max-width:640px;text-align:center;font-size:14px;color:var(--txt-lt)}
 
+/* ---------- about ---------- */
+.sp-br{display:none}
+@media (max-width:600px){.sp-br{display:inline}}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+.about__box{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;
+}
+.about__ttl{
+  margin:0 0 16px;font-size:15px;font-weight:700;color:var(--navy);
+  display:flex;align-items:center;gap:9px;letter-spacing:.08em;
+}
+.about__ico{
+  flex:none;width:30px;height:30px;border-radius:50%;background:var(--pink-lt);
+  display:flex;align-items:center;justify-content:center;font-size:14px;
+}
+.about__list li{
+  display:flex;align-items:baseline;justify-content:space-between;gap:14px;
+  padding:11px 0;border-bottom:1px dashed var(--line);
+}
+.about__list li:last-child{border-bottom:0;padding-bottom:0}
+.about__key{flex:none;font-size:13.5px;color:var(--txt-lt);letter-spacing:.06em}
+.about__val{
+  text-align:right;font-size:15px;font-weight:700;color:var(--navy);line-height:1.5;
+}
+.about__val em{
+  display:block;font-style:normal;font-size:11px;font-weight:400;
+  color:var(--txt-lt);letter-spacing:.04em;margin-top:2px;
+}
+.about__foot{margin:16px 0 0;font-size:12px;color:var(--txt-lt);line-height:1.75}
+.about__hero{
+  margin:26px 0 0;text-align:center;font-size:clamp(17px,4vw,22px);
+  font-weight:700;color:var(--navy);line-height:1.7;
+}
+.about__hero .mark{background:linear-gradient(transparent 60%,#ffe0e9 60%);padding:0 .12em}
+.about__extra{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+@media (max-width:760px){.about__extra{grid-template-columns:1fr}}
+.about__extra-item{
+  background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);
+  border-radius:10px;padding:20px 22px;
+}
+.about__extra-item h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--navy);line-height:1.6}
+.about__extra-item p{margin:0;font-size:13px;color:var(--txt-lt)}
+
+/* ---------- proof ---------- */
+.proof{
+  background:#fff;border:1px solid var(--line);border-radius:20px;
+  padding:34px 30px;position:relative;
+}
+.proof__label{
+  display:inline-block;font-size:10.5px;font-weight:700;color:#fff;
+  background:var(--navy);border-radius:999px;padding:5px 16px;margin-bottom:18px;
+}
+.proof__lead{font-size:14.5px;color:var(--txt);margin:0 0 20px}
+.proof__lead strong{color:var(--navy)}
+.proof__list{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 20px;
+}
+@media (max-width:640px){.proof__list{grid-template-columns:1fr}}
+.proof__list li{
+  background:var(--bg-soft);border-radius:12px;padding:16px 14px;text-align:center;
+}
+.proof__key{display:block;font-size:11px;color:var(--txt-lt);letter-spacing:.06em;margin-bottom:4px}
+.proof__val{
+  display:block;font-size:clamp(16px,3.6vw,19px);font-weight:700;color:var(--navy);line-height:1.4;
+}
+.proof__note{
+  margin:0;font-size:13px;color:var(--txt-lt);
+  border-top:1px dashed var(--line);padding-top:18px;
+}
+
 /* ---------- reason ---------- */
 .reasons{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
 @media (max-width:760px){.reasons{grid-template-columns:1fr}}
@@ -162,6 +233,19 @@ ul{margin:0;padding:0;list-style:none}
 }
 .reason__ttl{margin:0 0 10px;font-size:17px;font-weight:700;color:var(--navy);line-height:1.6}
 .reason__txt{font-size:14px;color:var(--txt-lt);margin:0}
+
+.story{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 26px;margin-bottom:20px;font-size:14px;color:var(--txt-lt);
+}
+.story__ttl{
+  margin:0 0 14px;font-size:16px;font-weight:700;color:var(--navy);line-height:1.7;
+  padding-left:14px;border-left:3px solid var(--pink);
+}
+.story__last{
+  margin:16px 0 0;padding-top:16px;border-top:1px dashed var(--line);
+}
+.story__last strong{color:var(--navy)}
 
 .note-box{
   background:#fff;border:1px solid var(--line);border-left:4px solid var(--pink);
@@ -339,8 +423,8 @@ ul{margin:0;padding:0;list-style:none}
   <div class="inner header__inner">
     <a class="header__logo" href="#top">SHIO<span>.</span>CONTENTS</a>
     <nav class="header__nav">
+      <a href="#about">プロフィール</a>
       <a href="#why">選び方</a>
-      <a href="#pillars">3つの柱</a>
       <a href="#list">コンテンツリスト</a>
       <a href="#bonus">特典</a>
     </nav>
@@ -364,8 +448,8 @@ ul{margin:0;padding:0;list-style:none}
         <span class="mark">これだけあればOK!!</span><br>コンテンツリスト
       </h1>
       <p class="hero__lead">
-        AIをバキバキ使って、Threadsでお小遣いもらってます。スピ垢・育児垢・恋愛垢など複数運用で、4ヶ月の総収益は100万円を突破しました。
         このページは、私が実際に買って「これは本物だった」と思えた教材だけを並べたリストです。
+        全部買う必要はありません。いまの自分に合う1本を選んでもらうために作りました。
       </p>
       <a class="btn" href="#list">コンテンツリストを見る</a>
       <p class="hero__note">当ページのリンク経由でご購入いただいた方に、特典をご用意しています。</p>
@@ -391,8 +475,88 @@ ul{margin:0;padding:0;list-style:none}
     </div>
   </section>
 
+  <!-- ============ ABOUT ============ -->
+  <section class="sec sec--soft" id="about">
+    <span class="deco pk lg" style="top:64px;left:6vw"></span>
+    <span class="deco bl d1" style="bottom:90px;right:8vw"></span>
+    <div class="inner">
+      <h2 class="ttl">
+        <span class="en">ABOUT ME</span>
+        <span class="jp">AIをバキバキ使って、<br class="sp-br">Threadsでお小遣い貰ってます</span>
+      </h2>
+      <p class="ttl__lead">
+        色々挑戦しすぎて、もう自分でも何者か分からなくなってきたので、ここで簡単に自己紹介させてください。
+      </p>
+
+      <div class="about fade">
+        <div class="about__box">
+          <h3 class="about__ttl"><span class="about__ico">📱</span>運用中のアカウント</h3>
+          <ul class="about__list">
+            <li><span class="about__key">スピ垢</span><span class="about__val">万垢</span></li>
+            <li><span class="about__key">○○垢</span><span class="about__val">8,000人<em>1ヶ月で</em></span></li>
+            <li><span class="about__key">育児垢</span><span class="about__val">8,000人</span></li>
+            <li><span class="about__key">育児垢</span><span class="about__val">4,000人</span></li>
+            <li><span class="about__key">恋愛垢</span><span class="about__val">運用中</span></li>
+          </ul>
+          <p class="about__foot">他にも複数運用中です！</p>
+        </div>
+
+        <div class="about__box">
+          <h3 class="about__ttl"><span class="about__ico">💰</span>収益のうちわけ</h3>
+          <ul class="about__list">
+            <li><span class="about__key">アフィリエイト</span><span class="about__val">月6桁</span></li>
+            <li><span class="about__key">非稼ぎnote</span><span class="about__val">30万円<em>フォロワー2,500人で</em></span></li>
+            <li><span class="about__key">恋愛垢</span><span class="about__val">3,000円note<em>フォロワー5人でも成約</em></span></li>
+          </ul>
+          <p class="about__foot">非稼ぎnoteは4ヶ月経った今も安定して6桁を売り上げています。</p>
+        </div>
+      </div>
+
+      <p class="about__hero fade"><span class="mark">4ヶ月で総収益100万円</span>を超えました</p>
+
+      <div class="about__extra fade">
+        <div class="about__extra-item">
+          <h3>弟子2人が万垢を達成</h3>
+          <p>コンセプト設計から私と一緒に組み立てたアカウントです。（現在、弟子の募集はしていません）</p>
+        </div>
+        <div class="about__extra-item">
+          <h3>初動を爆速で伸ばすのが得意</h3>
+          <p>初心者の方で14日に1,000フォロワー、14日で2,000フォロワーを達成しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF ============ -->
+  <section class="sec" id="proof">
+    <span class="deco bl" style="top:80px;right:7vw"></span>
+    <div class="inner--narrow">
+      <h2 class="ttl">
+        <span class="en">REAL NUMBERS</span>
+        <span class="jp">ゆるく運用しても、ここまでは目指せる</span>
+      </h2>
+
+      <div class="proof fade">
+        <span class="proof__label font-en">2025.11 / AMAZON</span>
+        <p class="proof__lead">
+          この月は特大noteのローンチ期間で、アフィリエイトは<strong>毎日1投稿しかできていない状態</strong>でした。
+          それでもAmazonだけで6桁を超えています（ボーナス込み）。
+        </p>
+        <ul class="proof__list">
+          <li><span class="proof__key">アフィの稼働</span><span class="proof__val">1日1投稿だけ</span></li>
+          <li><span class="proof__key">Amazon収益</span><span class="proof__val">6桁超え</span></li>
+          <li><span class="proof__key">同月のnote売上</span><span class="proof__val">50万円</span></li>
+        </ul>
+        <p class="proof__note">
+          正しくThreadsを学べば、ゆるーく運用しても月にこれくらいは目指せるということです。
+          私はシロウさんのHackers講座生ですが、学び方さえ間違えなければ、月5万円を安定させるのは正直かなり簡単だと思っています。
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ WHY ============ -->
-  <section class="sec" id="why">
+  <section class="sec sec--soft" id="why">
     <span class="deco bl" style="top:70px;right:6vw"></span>
     <div class="inner--narrow">
       <h2 class="ttl">
@@ -400,8 +564,8 @@ ul{margin:0;padding:0;list-style:none}
         <span class="jp">売上が出ないのは、才能のせいじゃない</span>
       </h2>
       <p class="ttl__lead">
-        正しい学習の仕方さえ知っていれば、月5万円くらいの安定収入は結構かんたんに作れます。
-        それでも出ない人には、だいたい共通する理由が2つあります。
+        毎日頑張ってるのに売上がイマイチ出せてない人。君たちはよく頑張ってるよ、ほんとに。
+        それでも売上が出ない理由は、だいたいこの2つです。
       </p>
 
       <ul class="reasons fade">
@@ -417,6 +581,19 @@ ul{margin:0;padding:0;list-style:none}
         </li>
       </ul>
 
+      <div class="story fade">
+        <h3 class="story__ttl">私はアフィから始めて、途中で「向いてる方」に気づきました</h3>
+        <p>
+          もともとアフィリエイトをメインに活動していたんですが、もっと売上を作りたいと思って始めた非稼ぎ垢がヒット。
+          「あれ、私noteのほうが向いてるんじゃね？」とここで気づきました。
+        </p>
+        <p>
+          だからと言って「みんなnoteやれよ！」じゃないんです。ほんとに人それぞれ向き不向きがある。
+          大好きななのかママはアフィだけでも7桁いくし、アフィが向いてる人もたーくさんいます。
+        </p>
+        <p class="story__last">だからこのページでは、ジャンルもやり方も違うコンテンツを並べています。<strong>あなたに合う1本を選んでください。</strong></p>
+      </div>
+
       <div class="note-box fade">
         <h3>買う前に、この2つだけ決めてください</h3>
         <ul>
@@ -428,7 +605,7 @@ ul{margin:0;padding:0;list-style:none}
   </section>
 
   <!-- ============ PILLARS ============ -->
-  <section class="sec sec--soft" id="pillars">
+  <section class="sec" id="pillars">
     <span class="deco pk lg" style="top:60px;left:7vw"></span>
     <div class="inner">
       <h2 class="ttl">
@@ -460,7 +637,7 @@ ul{margin:0;padding:0;list-style:none}
   </section>
 
   <!-- ============ LIST ============ -->
-  <section class="sec" id="list">
+  <section class="sec sec--soft" id="list">
     <span class="deco bl d2" style="top:90px;right:5vw"></span>
     <div class="inner">
       <h2 class="ttl">
@@ -718,7 +895,7 @@ ul{margin:0;padding:0;list-style:none}
   </section>
 
   <!-- ============ BONUS ============ -->
-  <section class="sec sec--soft2" id="bonus">
+  <section class="sec" id="bonus">
     <span class="deco pk" style="top:70px;right:9vw"></span>
     <div class="inner--narrow">
       <h2 class="ttl">
@@ -756,7 +933,7 @@ ul{margin:0;padding:0;list-style:none}
   </section>
 
   <!-- ============ STEPS ============ -->
-  <section class="sec">
+  <section class="sec sec--soft">
     <div class="inner">
       <h2 class="ttl">
         <span class="en">HOW TO GET</span>
@@ -798,7 +975,7 @@ ul{margin:0;padding:0;list-style:none}
   </section>
 
   <!-- ============ FAQ ============ -->
-  <section class="sec sec--soft">
+  <section class="sec">
     <div class="inner--narrow">
       <h2 class="ttl">
         <span class="en">FAQ</span>
