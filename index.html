@@ -212,7 +212,12 @@ ul{margin:0;padding:0;list-style:none}
 .card{
   display:flex;flex-direction:column;
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px 24px 24px;
+  padding:26px 24px 24px;overflow:hidden;
+}
+.card__thumb{
+  display:block;width:calc(100% + 48px);height:auto;aspect-ratio:1280/670;
+  margin:-26px -24px 20px;object-fit:cover;background:var(--bg-soft2);
+  border-bottom:1px solid var(--line);
 }
 .card__tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
 .tag{
@@ -475,6 +480,7 @@ ul{margin:0;padding:0;list-style:none}
         </div>
         <div class="cards fade">
           <article class="card">
+            <img class="card__thumb" src="assets/img/shinthreads.jpg" alt="シンスレッズ｜シロウさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">Threads運用の全体像</span>
@@ -498,6 +504,7 @@ ul{margin:0;padding:0;list-style:none}
           </article>
 
           <article class="card">
+            <img class="card__thumb" src="assets/img/road-to-threads.jpg" alt="ROAD TO THREADS｜やま＠AI×Threadsさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">Threads全戦略</span>
@@ -532,6 +539,7 @@ ul{margin:0;padding:0;list-style:none}
         </div>
         <div class="cards fade">
           <article class="card">
+            <img class="card__thumb" src="assets/img/kapibara-rakuten.jpg" alt="Threads×楽天アフィリエイトの攻略本｜カピパラおじさんさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">楽天アフィリエイト</span>
@@ -549,6 +557,7 @@ ul{margin:0;padding:0;list-style:none}
           </article>
 
           <article class="card">
+            <img class="card__thumb" src="assets/img/azarachi-kyokasho.jpg" alt="Threads × 楽天アフィリエイトの教科書｜あざらちママさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">700部完売</span>
@@ -580,6 +589,7 @@ ul{margin:0;padding:0;list-style:none}
         </div>
         <div class="cards fade">
           <article class="card">
+            <img class="card__thumb" src="assets/img/melmama-fashion.jpg" alt="世界で一番優しいアフィリエイト攻略 ファッション雑貨ジャンル｜めるママさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">ファッション雑貨</span>
@@ -607,6 +617,7 @@ ul{margin:0;padding:0;list-style:none}
           </article>
 
           <article class="card">
+            <img class="card__thumb" src="assets/img/azarachi-ikuji.jpg" alt="Threads×アフィリエイト 育児ジャンルの極意｜あざらちママさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">育児ジャンル</span>
@@ -631,6 +642,7 @@ ul{margin:0;padding:0;list-style:none}
           </article>
 
           <article class="card">
+            <img class="card__thumb" src="assets/img/nanoka-sale.jpg" alt="楽天&Amazonアフィリエイトセール攻略ノウハウ｜なのかママさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">セール攻略</span>
@@ -663,6 +675,7 @@ ul{margin:0;padding:0;list-style:none}
         </div>
         <div class="cards fade">
           <article class="card">
+            <img class="card__thumb" src="assets/img/ochako-anaba.jpg" alt="スキル・実績なしで月50万達成できた 穴場ジャンル×裏攻略｜おちゃこさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">穴場ジャンル</span>
@@ -679,6 +692,7 @@ ul{margin:0;padding:0;list-style:none}
           </article>
 
           <article class="card">
+            <img class="card__thumb" src="assets/img/tedd-program.jpg" alt="てっど式 第2弾 購入通知量産プログラム｜てっどさん" width="640" height="335" loading="lazy" decoding="async">
             <div class="card__tags">
               <span class="tag tag--pr">PRリンク</span>
               <span class="tag">売上が倍に</span>

@@ -7,6 +7,7 @@ note記事「[Threads総フォロワー３万人の私が教えるこれだけ�
 ## 構成
 
 - `index.html` — LP本体。CSS/JSはすべて内包した単一ファイル
+- `assets/img/` — 教材サムネイル（各販売ページのog:imageを640px幅のJPEGにリサイズしたもの）
 - `.nojekyll` — GitHub PagesのJekyll処理を無効化
 
 外部依存はGoogle Fonts（Poppins）のみ。ビルド不要。
@@ -30,6 +31,7 @@ note記事「[Threads総フォロワー３万人の私が教えるこれだけ�
 - 教材を追加するときは `<!-- ============ LIST ============ -->` 内の `.cat` ブロックをコピーする
 - PRリンクには `rel="noopener sponsored"` を付ける。note等の非PRリンクは `sponsored` を外し、タグを `特典対象外` にする
 - 数値（部数・実績）は本文にベタ書きなので、更新時は該当箇所を直接編集する
+- サムネは販売ページのog:imageを取得 → `sips -s format jpeg -s formatOptions 78 -Z 640` で圧縮して `assets/img/` に置く
 
 ## ローカル確認
 
