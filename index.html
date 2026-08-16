@@ -11,6 +11,7 @@
 <meta property="og:title" content="これだけあればOK!! Threadsコンテンツリスト｜しおちゃん">
 <meta property="og:description" content="Threads総フォロワー3万人の私が、本当に買ってよかった教材だけをまとめました。経由購入でGPTsセット配布＋アカウント相談＋添削の特典つき。">
 <meta property="og:url" content="https://shiochann.github.io/shio-contents/">
+<meta property="og:image" content="https://shiochann.github.io/shio-contents/assets/img/profile-shiochan.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#003953">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -150,6 +151,15 @@ ul{margin:0;padding:0;list-style:none}
 .ttl__lead{margin:-28px auto 44px;max-width:640px;text-align:center;font-size:14px;color:var(--txt-lt)}
 
 /* ---------- about ---------- */
+.profile{
+  margin:0 auto 26px;max-width:520px;
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:#fff;line-height:0;
+}
+.profile img{width:100%;height:auto}
+.banner{margin:0 auto 26px;max-width:760px;line-height:0}
+.banner img{width:100%;height:auto;border-radius:10px}
+.ttl__lead--tight{margin-top:0}
 .sp-br{display:none}
 @media (max-width:600px){.sp-br{display:inline}}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -192,6 +202,8 @@ ul{margin:0;padding:0;list-style:none}
 }
 .about__extra-item h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--navy);line-height:1.6}
 .about__extra-item p{margin:0;font-size:13px;color:var(--txt-lt)}
+.about__extra-item a{font-weight:700;white-space:nowrap}
+@media (min-width:761px){.about__extra-item--wide{grid-column:1 / -1}}
 
 /* ---------- proof ---------- */
 .proof{
@@ -214,6 +226,17 @@ ul{margin:0;padding:0;list-style:none}
 .proof__key{display:block;font-size:11px;color:var(--txt-lt);letter-spacing:.06em;margin-bottom:4px}
 .proof__val{
   display:block;font-size:clamp(16px,3.6vw,19px);font-weight:700;color:var(--navy);line-height:1.4;
+}
+.proof__val em{
+  display:block;font-style:normal;font-size:10.5px;font-weight:400;
+  color:var(--txt-lt);letter-spacing:.04em;margin-top:3px;
+}
+.proof__shot{margin:0 0 22px}
+.proof__shot img{
+  width:100%;height:auto;border:1px solid var(--line);border-radius:12px;display:block;
+}
+.proof__shot figcaption{
+  margin-top:10px;font-size:11.5px;color:var(--txt-lt);line-height:1.75;text-align:center;
 }
 .proof__note{
   margin:0;font-size:13px;color:var(--txt-lt);
@@ -488,6 +511,10 @@ ul{margin:0;padding:0;list-style:none}
         色々挑戦しすぎて、もう自分でも何者か分からなくなってきたので、ここで簡単に自己紹介させてください。
       </p>
 
+      <figure class="profile fade">
+        <img src="assets/img/profile-shiochan.jpg" alt="しおちゃん（@shio_chan24）の自己紹介。0歳3歳の子育てで毎日バタバタだったけど、半年前にSNSを開始しHackersとの出会いで人生が激変。Threadsフォロワー3万人、アフィ6桁＆非稼ぎ垢noteで50万達成。ママでも人生変えられる方法を発信中。" width="793" height="800" loading="lazy" decoding="async">
+      </figure>
+
       <div class="about fade">
         <div class="about__box">
           <h3 class="about__ttl"><span class="about__ico">📱</span>運用中のアカウント</h3>
@@ -496,7 +523,7 @@ ul{margin:0;padding:0;list-style:none}
             <li><span class="about__key">○○垢</span><span class="about__val">8,000人<em>1ヶ月で</em></span></li>
             <li><span class="about__key">育児垢</span><span class="about__val">8,000人</span></li>
             <li><span class="about__key">育児垢</span><span class="about__val">4,000人</span></li>
-            <li><span class="about__key">恋愛垢</span><span class="about__val">運用中</span></li>
+            <li><span class="about__key">恋愛垢</span><span class="about__val">月5万円<em>完全自動で安定</em></span></li>
           </ul>
           <p class="about__foot">他にも複数運用中です！</p>
         </div>
@@ -523,6 +550,14 @@ ul{margin:0;padding:0;list-style:none}
           <h3>初動を爆速で伸ばすのが得意</h3>
           <p>初心者の方で14日に1,000フォロワー、14日で2,000フォロワーを達成しています。</p>
         </div>
+        <div class="about__extra-item about__extra-item--wide">
+          <h3>シロウさんの講座を受講して3ヶ月</h3>
+          <p>
+            2ヶ月目で月収6桁を達成し、3ヶ月目には講座代を1ヶ月で回収できる収益になりました。
+            アフィリエイトもnoteも、そこそこ出来ます。
+            <a href="https://www.threads.com/share/HKXYEIAUz/" target="_blank" rel="noopener">当時のThreads投稿を見る →</a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -542,9 +577,14 @@ ul{margin:0;padding:0;list-style:none}
           この月は特大noteのローンチ期間で、アフィリエイトは<strong>毎日1投稿しかできていない状態</strong>でした。
           それでもAmazonだけで6桁を超えています（ボーナス込み）。
         </p>
+        <figure class="proof__shot">
+          <img src="assets/img/amazon-2025-11.jpg" alt="Amazonアソシエイトの2025年11月（Nov 01 2025 - Nov 30 2025）のサマリー画面。紹介料 ¥64,6◯◯。" width="800" height="374" loading="lazy" decoding="async">
+          <figcaption>2025年11月の紹介料サマリー。これにAmazonのボーナスが加わり、この月はAmazonだけで6桁を超えました。</figcaption>
+        </figure>
+
         <ul class="proof__list">
           <li><span class="proof__key">アフィの稼働</span><span class="proof__val">1日1投稿だけ</span></li>
-          <li><span class="proof__key">Amazon収益</span><span class="proof__val">6桁超え</span></li>
+          <li><span class="proof__key">Amazon収益</span><span class="proof__val">6桁超え<em>ボーナス込み</em></span></li>
           <li><span class="proof__key">同月のnote売上</span><span class="proof__val">50万円</span></li>
         </ul>
         <p class="proof__note">
@@ -644,7 +684,11 @@ ul{margin:0;padding:0;list-style:none}
         <span class="en">CONTENTS LIST</span>
         <span class="jp">これだけあればOK!! コンテンツリスト</span>
       </h2>
-      <p class="ttl__lead">
+      <figure class="banner fade">
+        <img src="assets/img/banner-chumoku.jpg" alt="注目：アフィもnoteも6桁以上稼げる私が、実際に使ってきたコンテンツを紹介します！" width="900" height="244" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="ttl__lead ttl__lead--tight">
         私が実際に購入して、売上に直結したものだけを載せています。全部買う必要はありません。
         いまの自分に足りない「柱」から1つ選んでください。
       </p>
@@ -945,7 +989,9 @@ ul{margin:0;padding:0;list-style:none}
         <li class="step">
           <span class="step__no font-en">STEP 01</span>
           <h3 class="step__ttl">Threadsをフォロー</h3>
-          <p class="step__txt">Threadsの「しおちゃん」アカウントをフォローしてください。</p>
+          <p class="step__txt">
+            Threadsの<a href="https://www.threads.com/@shio_chan24" target="_blank" rel="noopener"><strong>@shio_chan24</strong></a>をフォローしてください。
+          </p>
         </li>
         <li class="step">
           <span class="step__no font-en">STEP 02</span>
@@ -1032,6 +1078,7 @@ ul{margin:0;padding:0;list-style:none}
     <nav class="footer__nav">
       <a href="#list">コンテンツリスト</a>
       <a href="#bonus">特典</a>
+      <a href="https://www.threads.com/@shio_chan24" target="_blank" rel="noopener">Threads @shio_chan24</a>
       <a href="https://lin.ee/xIWJVm4" target="_blank" rel="noopener">公式LINE</a>
       <a href="https://note.com/shiochan07/n/nc68b72f54fe0" target="_blank" rel="noopener">元記事（note）</a>
     </nav>
